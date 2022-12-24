@@ -1,3 +1,5 @@
+import tkinter
+
 import matplotlib
 matplotlib.use("TkAgg")
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
@@ -31,10 +33,14 @@ y_budget = dataset.iloc[:, 1:]
 
 tkwindow = tk.Tk()
 
+buttonfood = tkinter.Button(text="Food",)
+buttonfood.pack(side= tk.TOP)
+
 plt.style.use('ggplot')
 f = Figure(figsize=(12, 6), dpi= 100 )
 a = f.add_subplot(111)
 a.plot(x_budget, y_budget)
+
 
 canvas = FigureCanvasTkAgg(f, tkwindow)
 canvas.draw()
