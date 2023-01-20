@@ -1,5 +1,4 @@
-# Budget-and-Investment-Trac
-ker
+# Budget-and-Investment-Tracker
 
 This is a program that is mainly for personal use and to show as a resume project.
 Since the database used for the program is a MySQL server that runs on my computer
